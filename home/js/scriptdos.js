@@ -36,7 +36,7 @@ a.addEventListener("load", function () {
 
 
 function getArrayFondos(svgDoc) {
-    var arrayFondos = [];
+    let arrayFondos = [];
 
     arrayFondos.push(svgDoc.getElementById("fondoUno"));
     arrayFondos.push(svgDoc.getElementById("fondoDos"));
@@ -49,7 +49,7 @@ function getArrayFondos(svgDoc) {
 }
 
 function getArrayPartes(svgDoc) {
-    var arrayPartes = [];
+    let arrayPartes = [];
 
     arrayPartes.push(svgDoc.getElementById("parteUno"));
     arrayPartes.push(svgDoc.getElementById("parteDos"));
@@ -57,8 +57,6 @@ function getArrayPartes(svgDoc) {
     arrayPartes.push(svgDoc.getElementById("parteCuatro"));
     arrayPartes.push(svgDoc.getElementById("parteCinco"));
     arrayPartes.push(svgDoc.getElementById("parteSeis"));
-
-    arrayPartes[1].classList.add("move");
 
     return (arrayPartes)
 }

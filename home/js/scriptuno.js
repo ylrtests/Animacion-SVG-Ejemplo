@@ -49,7 +49,7 @@ a.addEventListener("load", function () {
 
 
 function getArrayFondos(svgDoc) {
-    var arrayFondos = [];
+    let arrayFondos = [];
 
     arrayFondos.push(svgDoc.getElementById("fondoUno"));
     arrayFondos.push(svgDoc.getElementById("fondoDos"));
@@ -62,7 +62,7 @@ function getArrayFondos(svgDoc) {
 }
 
 function getArrayPartes(svgDoc) {
-    var arrayPartes = [];
+    let arrayPartes = [];
 
     arrayPartes.push(svgDoc.getElementById("parteUno"));
     arrayPartes.push(svgDoc.getElementById("parteDos"));

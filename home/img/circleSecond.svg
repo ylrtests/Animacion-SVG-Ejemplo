@@ -23,10 +23,11 @@
 	}
 	.parte{
 		opacity: 0;
-		transition: opacity 1.5s, transform 2s;
+		transition: opacity 1.5s, transform 1.5s;
+		transform-origin: 50% 50%;
 	}
 	.parte:hover{
-		transform: scale(1.04);
+		transform: scale(1.2);
 	}
 
 </style>

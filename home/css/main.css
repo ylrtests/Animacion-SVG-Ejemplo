@@ -65,7 +65,6 @@ h1{
 .ml-2{
     margin-left: 2em;
 }
-  
 
 .flex-container{
     display: flex;
@@ -86,41 +85,3 @@ h1{
 }
 
 
-/* 
-svg {
-    width: 300px;
-    align-self: center;
-    justify-content: center;
-}
-
-svg:hover #logo{
-    animation-duration: 1.2s;
-    animation-name: animateLogo;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#logo{
-    opacity: 0;
-}
-
-@keyframes animateLogo{
-    from{
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(50px) translateY(-30px);
-        opacity: 1;
-    }
-} 
-
-.st0{display:none;fill:#282A2C;}
-.st1{fill:#F2F2F2;}
-.st2{fill:#486885;}
-.st3{fill:#83BEF2;}
-.st4{fill:#507494;}
-.st5{fill:#949494;}
-
-
-*/

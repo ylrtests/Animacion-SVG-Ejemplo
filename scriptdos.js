@@ -7,31 +7,22 @@ a.addEventListener("load", function () {
 
     // get the inner DOM of circleSecond.svg
     var svgDoc = a.contentDocument;
+    
+    //get all the important properties
     var casa = svgDoc.getElementById("casa")
-    casa.style.opacity = 0
-
-    //get all the backgrounds
     var arrayFondos = getArrayFondos(svgDoc);
     var arrayPartes = getArrayPartes(svgDoc);
-
-
-    for (let parte of arrayPartes) {
-        parte.style.opacity = 0
-    }
 
     setTimeout(() => {
         console.log(arrayFondos)
         a.style.visibility = "visible";
         casa.style.opacity = 1
-        casa.style.transition = "opacity 2s";
-        let i = 0;
 
+        let i = 0;
         setInterval(() => {
             if (i < arrayPartes.length) {
                 console.log(i)
                 arrayPartes[i].style.opacity = 1
-                arrayPartes[i].classList.add("move");
-                arrayPartes[i].style.transition = "all 1.5s";
                 i++;
             }
             else {

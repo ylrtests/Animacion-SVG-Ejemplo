@@ -8,37 +8,27 @@ a.addEventListener("load", function () {
 
     // get the inner DOM of circleSecond.svg
     var svgDoc = a.contentDocument;
-    var casa = svgDoc.getElementById("casa")
-    casa.style.opacity = 0
 
-    //get all the backgrounds
+    //get all the import properties
     var arrayFondos = getArrayFondos(svgDoc);
     var arrayPartes = getArrayPartes(svgDoc);
-
-
-    for (let parte of arrayPartes) {
-        parte.style.opacity = 0
-    }
+    var casa = svgDoc.getElementById("casa")
 
     setTimeout(() => {
         a.style.visibility = "visible";
         casa.style.opacity = 1
-        casa.style.transition = "opacity 2s";
         let i = 0;
 
         setInterval(() => {
             if (i < arrayPartes.length) {
                 console.log(i)
                 arrayPartes[i].style.opacity = 1
-                arrayPartes[i].classList.add("move");
-                arrayPartes[i].style.transition = "all 1s";
-
                 i++;
             }
             else {
                 clearInterval()
             }
-        }, 300);
+        }, 500);
 
     }, 1000);
 
